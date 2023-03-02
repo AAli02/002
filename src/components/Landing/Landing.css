@@ -179,8 +179,31 @@ textarea {
 /* MEDIA SIZING */
 
 @media screen and (max-width: 1000px) {
+  
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1200px;
+    /* max-height: 700px; */
+    min-height: 500px;
+    border-radius: 20px;
+    display: flex;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+    background-color: #242424;
+  }
+
   .banner__img {
     padding: 0px 0px;
+  }
+
+  .scroll {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 }
