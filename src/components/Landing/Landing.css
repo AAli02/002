@@ -1,5 +1,6 @@
 #Landing {
   height: 100vh;
+  overflow: hidden;
 }
 
 .banner {
