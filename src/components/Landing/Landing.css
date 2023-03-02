@@ -1,0 +1,274 @@
+#Landing {
+  height: 100vh;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1200px;
+  /* max-height: 700px; */
+  min-height: 500px;
+  border-radius: 20px;
+  display: flex;
+  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  background-color: #242424;
+}
+
+.banner__half {
+  width: 50%;
+  padding: 40px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: all 300ms ease-in;
+  color: #fff;
+  animation: banner__load2 500ms ease-in;
+}
+
+.banner__about {
+  filter: brightness(90%);
+  margin-top: 80px;
+  animation: banner__load 500ms ease-out;
+}
+
+
+
+@keyframes banner__load {
+  0% {
+    transform: translateX(-110%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes banner__load2 {
+  0% {
+    transform: translateX(110%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.banner__contact {
+  color: white;
+}
+
+.banner__img {
+  padding: 20px 42px;
+}
+
+
+.banner__title {
+  font-size: 38px;
+}
+
+.banner__sub-title {
+  margin: 24px 0 24px 0;
+  font-size: 18px;
+}
+
+h2 {
+  display: block;
+  margin-block-start: -4.33em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.scroll__icon {
+  width: 20px;
+  height: 30px;
+  border: 2px solid #242424;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll__icon:after {
+  content: "";
+  width: 4px;
+  height: 6px;
+  background-color: #242424;
+  border-radius: 2px;
+  animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(3px);
+  }  
+  100% {
+    transform: translateY(-3px);
+  }  
+}
+
+/* FORM */
+/* FORM */
+/* FORM */
+
+/* label {
+  font-size: 14px;
+  font-weight: bold;
+} */
+
+input,
+textarea {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  color: #242424;
+  outline: none;
+  border-radius: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+  transition: all 300ms ease;
+  padding-left: 20px;
+}
+
+.form__item {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.form__submit {
+  position: absolute;
+  background-color: #0091ff;
+  border: 2px solid #0091ff;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  width: 80%;
+  height: 30px;
+  max-width: 100px;
+  /* padding: 2px 24px; */
+  font-size: 16px;
+  transition: all 300ms ease;
+  /* margin-left: 62%; */
+  margin-top: 4px;
+  margin-right: 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.form__submit:hover {
+  background-color: #242424;
+  border: 2px solid #242424;
+}
+
+/* MEDIA SIZING */
+
+@media screen and (max-width: 1000px) {
+  .banner__img {
+    padding: 0px 0px;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
+  .banner__contact {
+    display: none;
+  }
+
+  .banner__img {
+    display: none;
+  }
+
+  .banner__about {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 10px 60px;
+    margin-top: 10%;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+
+  .banner {
+    top: 55%;
+    left: 50%;
+    height: 200px;
+  }
+
+  .banner__contact {
+    display: none;
+  }
+
+  .banner__about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: -10%;
+  }
+
+  .banner__img {
+    display: none;
+  }
+
+  .banner__title {
+    font-size: 30px;
+  }
+
+  .banner__sub-title {
+    font-size: 18px;
+  }
+
+  .scroll__icon {
+    border: 2px solid #fff;
+  }
+  
+  .scroll {
+    bottom: 100px;
+  }
+  
+  .scroll__icon:after {
+    background-color: #fff;
+  }
+
+  input,
+  textarea {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    color: #242424;
+    outline: none;
+    border-radius: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 80px;
+    transition: all 300ms ease;
+    padding-left: 20px;
+  }
+
+  .form__item {
+    position: relative;
+    margin-bottom: 2px;
+  }
+
+  .form__submit {
+    margin-top: 58px;
+  }
+}
