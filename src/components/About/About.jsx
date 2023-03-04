@@ -53,7 +53,7 @@ export const About = () => {
             <strong className="bold__text">Creative digital agency </strong>with solid design and development expertise. 
             <br />
             <br />
-            <strong>We create for you:</strong>
+            {/* <strong>We create for you:</strong> */}
           </div>
           <ul role="list" className="list w__list-unstyled u__list">
             <li data-aos="fade-left" data-aos-easing="ease-in" data-aos-durration="700ms" className="list__item"><img className="check__img" src={check}/> Outshine the competition</li>
