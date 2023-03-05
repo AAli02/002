@@ -1,6 +1,5 @@
 #service {
-  /* height: 100vh; */
-  height: calc(100vh - 3px);
+  height: 100vh;
   display: grid;
   margin: 0px;
   padding: 0px;
