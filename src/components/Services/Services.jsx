@@ -8,6 +8,8 @@ import "./Services.css";
 
 function Services() {
   return (
+    <body>
+      
     <section id="service">
       <div className="section__wrapper">
         <div data-aos="fade-in" data-aos-easing="ease-in" data-aos-durration="" className="section__title">
@@ -38,6 +40,7 @@ function Services() {
         </div>
       </div>
     </section>
+    </body>
   );
 }
 

@@ -36,6 +36,8 @@ export const About = () => {
   }, [])
 
   return (
+    <body>
+      
     <section id="about">
       <div className="about__wrapper">
 
@@ -66,6 +68,7 @@ export const About = () => {
 
       </div>
     </section>
+    </body>
   );
 };
 

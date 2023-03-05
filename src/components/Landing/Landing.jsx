@@ -7,6 +7,7 @@ import "./Landing.css";
 
 function Landing() {
   return (
+    <body>
     <section id="Landing">
       <div className="banner">
         <div className="banner__about banner__half">
@@ -30,6 +31,7 @@ function Landing() {
         <div className="scroll__icon"></div>
       </a>
     </section>
+    </body>
   );
 }
 
