@@ -18,7 +18,8 @@ const App = () => (
     <Nav />
     <Landing />
     <About />
-    <Services />
+    <About />
+    {/* <Services /> */}
     <Footer />
   </div>
 );
