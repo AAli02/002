@@ -1,17 +1,39 @@
 * {
   scroll-behavior: smooth;
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: #fff;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;900&display=swap");
+
+body {
+  font-family: "Exo 2", sans-serif;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative; */
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f15946;
+  color: white;
+  /* flex-direction: column; */
+}
+
+.o-section {
+  width: 100%;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media screen and (max-width: 430px) {
   * {
