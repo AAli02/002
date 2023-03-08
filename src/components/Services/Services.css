@@ -1,8 +1,6 @@
 #service {
   height: 100vh;
   display: grid;
-  margin: 0px;
-  padding: 0px;
   overflow: hidden;
 }
 .section__wrapper {
@@ -105,8 +103,12 @@
 @media screen and (max-width: 600px) {
   #cards {
     grid-template-columns: 1fr;
-    max-width: 300px;
+    width: 300px;
   }
+  .card__content {
+    height: 150px;
+  }
+
 }
 
 @media screen and (max-width: 430px) {
