@@ -1,28 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;900&display=swap");
+
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;900&display=swap");
 
 body {
   font-family: "Exo 2", sans-serif;
   /* display: flex;
   align-items: center;
+  flex-direction: column; 
   justify-content: flex-start;
   position: relative; */
   min-height: 100vh;
   width: 100%;
   background-color: #f15946;
   color: white;
-  /* flex-direction: column; */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .o-section {
@@ -32,6 +30,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scroll__icon {
+  width: 20px;
+  height: 30px;
+  border: 2px solid #242424;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll__icon:after {
+  content: "";
+  width: 4px;
+  height: 6px;
+  background-color: #242424;
+  border-radius: 2px;
+  animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(3px);
+  }  
+  100% {
+    transform: translateY(-3px);
+  }  
 }
 
 

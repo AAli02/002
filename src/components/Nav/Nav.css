@@ -1,8 +1,8 @@
 #personal_logo {
   max-width: 130px;
   height: 70px;
-  /* -webkit-filter: grayscale(1) invert(1);
-  filter: grayscale(1) invert(1); */
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
   font-weight: 800;
   padding-top: 20px;
 }
@@ -119,4 +119,38 @@ nav {
 #personal_logo {
   padding-left: 30px;
   font-size: 20px;
+}
+
+/* ANIMATIONS */
+
+.nav__1 {
+  animation: animate 500ms ease-out;
+}
+.nav__2 {
+  animation: animate 700ms ease-out;
+}
+.nav__3 {
+  animation: animate 900ms ease-out;
+}
+#personal_logo {
+  animation: animate2 500ms ease-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(1200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(-1500%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
