@@ -5,7 +5,7 @@ import Aos from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Nav, Landing, About, Services, Footer, Test } from "./components";
+import { Nav, Landing, About, Services, Footer, Test, Home } from "./components";
 
 import 'aos/dist/aos.css';
 import "./App.css";
@@ -31,8 +31,8 @@ const App = () => {
           trigger: section,
           markers: false,
           end: () => `+=${section.offsetHeight}`,
-          scrub: 1,
-          snap: 1 / (sections.length - 1),
+          // scrub: 1,
+          // snap: 1 / (sections.length - 1),
           onEnter: () =>
             gsap.to("body", {
               backgroundColor: section.dataset.bgColor,
@@ -55,7 +55,8 @@ const App = () => {
       <Router>
         <Routes></Routes>
       </Router>
-      <Nav />
+      {/* <Nav /> */}
+      <Home />
       {/* <Landing /> */}
       {/* <About /> */}
       {/* <Services />{" "} */}

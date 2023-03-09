@@ -6,6 +6,9 @@ import Footer from './Footer/Footer';
 // import Test from './Test/Test';
 
 
+import Home from './Home/Home';
+
+
 export {
   Nav,
   Landing,
@@ -13,4 +16,5 @@ export {
   Services,
   Footer,
   // Test,
+  Home,
 };
