@@ -12,7 +12,7 @@ function Home() {
     <section id="home">
       <div className="home__container" onMouseMove={handleMouseMove}>
         <h1
-          style={{ transform: `translate(${mousePos.x / 40}px, ${mousePos.y / 40}px)` }}
+          style={{ transform: `translate(${mousePos.x / 80}px, ${mousePos.y / 80}px)` }}
           className="home__title"
         >
           From Concept To Reality.
