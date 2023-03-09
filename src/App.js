@@ -55,7 +55,7 @@ const App = () => {
       <Router>
         <Routes></Routes>
       </Router>
-      {/* <Nav /> */}
+      <Nav />
       <Home />
       {/* <Landing /> */}
       {/* <About /> */}
