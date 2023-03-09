@@ -85,7 +85,6 @@ nav {
   .nav {
     width: 20%;
   }
-
   .nav__link:first-child {
     display: none;
   }
