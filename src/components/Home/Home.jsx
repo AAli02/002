@@ -10,19 +10,17 @@ function Home() {
 
   return (
     <section id="home">
-      <div className="home__container" onMouseMove={handleMouseMove}>
-        <h1
-          style={{ transform: `translate(${mousePos.x / 80}px, ${mousePos.y / 80}px)` }}
-          className="home__title"
-        >
-          From Concept To Reality.
-        </h1>
-        {/* <h2 className="home__bio">
-        Empowering businesses with innovative web solutions.
-      </h2> */}
-      </div>
+      <div className="home__container">
+      <h1 className="home__title">
+        <span>From Concept To Reality</span>
+      </h1>
+     </div>
     </section>
   );
 }
 
 export default Home;
+
+// onMouseMove={handleMouseMove}
+
+// style={{transform: `translate(${mousePos.x / 80}px, ${mousePos.y / 80}px)`,}
