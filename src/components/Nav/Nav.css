@@ -1,4 +1,4 @@
-/* #personal_logo {
+#personal_logo {
   max-width: 130px;
   height: 70px;
   -webkit-filter: grayscale(1) invert(1);
@@ -78,7 +78,8 @@ nav {
   transition: all 200ms ease-in-out;
 }
 
------------------- MEDIA ----------------
+/* ------------------ MEDIA ---------------- */
+
 @media screen and (max-width: 700px) {
   .nav {
     width: 20%;
@@ -118,7 +119,7 @@ nav {
   font-size: 20px;
 }
 
-ANIMATIONS
+/* ANIMATIONS */
 
 .nav__1 {
   animation: animate 500ms ease-out;
@@ -150,4 +151,4 @@ ANIMATIONS
   100% {
     transform: translateX(0);
   }
-} */
+}
