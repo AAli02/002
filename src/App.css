@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;900&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -66,4 +66,4 @@ body {
   * {
     overflow-x: hidden;
   }
-} */
+}
