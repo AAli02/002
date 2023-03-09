@@ -10,17 +10,17 @@ function Nav() {
       </figure>
       <ul className="nav__link--list">
         <li  className="nav__link nav__1">
-          <a href="#about" className="nav__link--anchor link__hover-effect">
+          <a href="#" className="nav__link--anchor link__hover-effect">
             About
           </a>
         </li>
         <li className="nav__link nav__2">
-          <a href="#work" className="nav__link--anchor link__hover-effect">
+          <a href="#" className="nav__link--anchor link__hover-effect">
             Services
           </a>
         </li>
         <li className="nav__link nav__3">
-          <a href="#chat" className="contact__me">
+          <a href="#" className="contact__me">
             Let's Chat!
           </a>
         </li>
