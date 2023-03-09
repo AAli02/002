@@ -1,8 +1,8 @@
 #personal_logo {
   max-width: 130px;
   height: 70px;
-  -webkit-filter: grayscale(1) invert(1);
-  filter: grayscale(1) invert(1);
+  /* -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1); */
   font-weight: 500;
   padding-top: 20px;
 }
