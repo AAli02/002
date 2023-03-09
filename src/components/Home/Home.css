@@ -1,4 +1,4 @@
-#home {
+/* #home {
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -26,11 +26,11 @@
   width: 700px;
 }
 
-/* 
+
 MEDIA
 MEDIA
 MEDIA 
-*/
+
 
 @media screen and (max-width: 860px) {
   .home__title {
@@ -46,4 +46,4 @@ MEDIA
   .home__title {
     font-size: 32px;
   }
-}
+} */

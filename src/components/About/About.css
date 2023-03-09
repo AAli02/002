@@ -1,4 +1,4 @@
-#about {
+/* #about {
   height: 100vh;
   overflow-x: hidden;
 }
@@ -104,7 +104,7 @@ li {
   text-align: -webkit-match-parent;
 } 
 
-/* JAVASCRIPT ANIMATION  */
+JAVASCRIPT ANIMATION 
 
 .hidden {
   opacity: 0;
@@ -115,7 +115,7 @@ li {
   opacity: 1;
 } 
 
-/* JAVASCRIPT ANIMATION END */
+JAVASCRIPT ANIMATION END
 
 @media screen and (max-width: 1000px) {
   .about__content {
@@ -247,4 +247,4 @@ li {
     margin-top: 18px;
   }
 }
-
+ */
