@@ -10,9 +10,33 @@ function Home() {
 
   return (
     <section id="home">
-      <div className="home__container">
-      <h1 className="home__title">
-        <span>From Concept To Reality</span>
+      <nav>
+      <figure>
+        <h1 id="personal_logo">Web Forte</h1>
+      </figure>
+      <ul className="nav__link--list">
+        <li  className="nav__link nav__1">
+          <a href="#" className="nav__link--anchor link__hover-effect">
+            About
+          </a>
+        </li>
+        <li className="nav__link nav__2">
+          <a href="#" className="nav__link--anchor link__hover-effect">
+            Services
+          </a>
+        </li>
+        <li className="nav__link nav__3">
+          <a href="#" className="contact__me">
+            Let's Chat!
+          </a>
+        </li>
+      </ul>
+    </nav>
+      <div onMouseMove={handleMouseMove} className="home__container">
+      <h1 
+       style={{ transform: `translate(${mousePos.x / 80}px, ${mousePos.y / 80}px)` }}
+      className="home__title">
+        <span >From Concept To Reality</span>
       </h1>
      </div>
     </section>

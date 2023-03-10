@@ -11,7 +11,6 @@ import {
   About,
   Services,
   Footer,
-  Test,
   Home,
 } from "./components";
 
@@ -58,38 +57,35 @@ const App = () => {
   return (
     <div className="body" data-init-bg-color="#55bf91">
       <Router>
-        <Routes></Routes>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
       </Router>
-      <Nav />
       <Home />
       <a href="#one" className="scroll">
         <div className="scroll__icon"></div>
       </a>
       <section
-        ref={(el) => (sectionRefs.current[0] = el)}
-        className="o-section"
-      >
-        <About />
-      </section>
-      <section
         id="one"
-        ref={(el) => (sectionRefs.current[1] = el)}
+        ref={(el) => (sectionRefs.current[0] = el)}
         className="o-section js-section"
         data-bg-color="#f15946"
       >
-      <Services />
+        <Services />
       </section>
       <section
-        ref={(el) => (sectionRefs.current[2] = el)}
+        ref={(el) => (sectionRefs.current[1] = el)}
         className="o-section js-section"
         data-bg-color="#81a5ce"
       >
       </section>
       <section
-        ref={(el) => (sectionRefs.current[3] = el)}
+        ref={(el) => (sectionRefs.current[2] = el)}
         className="o-section js-section"
         data-bg-color="#636567"
-      ></section>
+      >
+      </section>
       <Footer />
     </div>
   );
