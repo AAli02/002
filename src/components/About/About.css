@@ -13,7 +13,7 @@
     text-align: center;
     width: 70%;
     /* margin: 0 auto; */
-    color: #fff;
+    color: #242424;
 }
 
 .features__container {
@@ -42,7 +42,7 @@
 }
 
 .features__title h1 {
-    color: #fff;
+    color: #242424;
     font-family: var(--font-family);
     font-size: 18px;
     font-weight: 800;
@@ -52,10 +52,11 @@
 
 .features__text {
     margin-top: 0.5rem;
+    color: #242424;
+    font-weight: 500;
 }
 
 .features__text p {
-    color: var(--color-text);
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 500;

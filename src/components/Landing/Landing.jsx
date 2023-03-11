@@ -22,7 +22,7 @@ function Landing() {
         </div>
       </div>
 
-      <a href="#AB1" className="scroll">
+      <a href="#" className="scroll">
         <div className="scroll__icon"></div>
       </a>
     </section>
