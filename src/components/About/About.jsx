@@ -21,3 +21,9 @@ export const About = () => {
 };
 
 export default About;
+
+
+// NOTES
+
+// Secure your business with a professional website
+

@@ -12,7 +12,7 @@ function Home() {
     <section id="home">
       <nav>
       <figure>
-        <h1 id="personal_logo">Web Forte</h1>
+        <h1 id="personal__logo">Web Forte</h1>
       </figure>
       <ul className="nav__link--list">
         <li  className="nav__link nav__1">
@@ -32,8 +32,11 @@ function Home() {
         </li>
       </ul>
     </nav>
-      <div className="home__container">
-      <h1 className="home__title">
+      <div onMouseMove={handleMouseMove} className="home__container">
+      <h1
+          style={{ transform: `translate(${mousePos.x / 20}px, ${mousePos.y / 20}px)` }}
+          className="home__title"
+        >
         <span >from concept to reality</span>
       </h1>
      </div>

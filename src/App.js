@@ -30,7 +30,7 @@ const App = () => {
     const sections = sectionRefs.current;
 
     sections.forEach((section, i) => {
-      const prevColor = i === 0 ? "#f15946" : sections[i - 1].dataset.bgColor;
+      const prevColor = i === 0 ? "#fff" : sections[i - 1].dataset.bgColor;
 
       gsap.to(section, {
         scrollTrigger: {
@@ -55,7 +55,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="body" data-init-bg-color="#55bf91">
+    <div className="body" data-init-bg-color="#fff">
       <Router>
         <Routes>
           <Route path="/about" element={<About />} />
@@ -70,9 +70,9 @@ const App = () => {
         id="one"
         ref={(el) => (sectionRefs.current[0] = el)}
         className="o-section js-section"
-        data-bg-color="#f15946"
+        data-bg-color="#fff"
       >
-        <Services />
+        <About />
       </section>
       <section
         ref={(el) => (sectionRefs.current[1] = el)}

@@ -12,7 +12,7 @@ body {
   font-family: "Exo 2", sans-serif;
   min-height: 100vh;
   width: 100%;
-  background-color: #f15946;
+  background-color: #ffffff;
   color: white;
   overflow-x: hidden;
   margin: 0;
@@ -47,8 +47,8 @@ body {
 .scroll__icon:after {
   content: "";
   width: 4px;
-  height: 6px;
-  background-color: #fff;
+  height: 24px;
+  background-color: #242424;
   border-radius: 2px;
   animation: scroll 1000ms infinite alternate-reverse;
 }
