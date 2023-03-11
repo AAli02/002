@@ -17,7 +17,7 @@
     text-align: center;
     width: 70%;
     /* margin: 0 auto; */
-    color: #fff;
+    color: #e8e8e8;
 }
 
 .features__container {
@@ -46,7 +46,7 @@
 }
 
 .features__title h1 {
-    color: #fff;
+    color: #e8e8e8;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: -.04em;
@@ -55,7 +55,7 @@
 
 .features__text {
     margin-top: 0.5rem;
-    color: #fff;
+    color: #e8e8e8;
     font-weight: 500;
 }
 
