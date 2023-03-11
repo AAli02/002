@@ -1,5 +1,5 @@
 #about {
-    margin-top: 8rem;
+    margin-top: 24rem;
 }
 
 .about__container {
@@ -17,7 +17,7 @@
     text-align: center;
     width: 70%;
     /* margin: 0 auto; */
-    color: #e8e8e8;
+    color: #242424;
 }
 
 .features__container {
@@ -46,7 +46,7 @@
 }
 
 .features__title h1 {
-    color: #e8e8e8;
+    color: #242424;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: -.04em;
@@ -55,7 +55,7 @@
 
 .features__text {
     margin-top: 0.5rem;
-    color: #e8e8e8;
+    color: #242424;
     font-weight: 500;
 }
 
@@ -71,6 +71,9 @@
         text-align: start;
         width: 70%;
         font-size: 1rem;
+    }
+    #about {
+        margin-top: 12rem;
     }
 }
 
