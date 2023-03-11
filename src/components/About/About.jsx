@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 
-import pic1 from "../../assets/pic1.png";
-import check from "../../assets/check.png";
-
 import "aos/dist/aos.css";
 import "./About.css";
 

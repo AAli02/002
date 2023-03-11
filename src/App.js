@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Aos from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 import {
   Nav,
@@ -25,6 +25,7 @@ const App = () => {
   }, []);
 
   const sectionRefs = useRef([]);
+  const location = useLocation();
 
   useEffect(() => {
     const sections = sectionRefs.current;
@@ -32,27 +33,44 @@ const App = () => {
     sections.forEach((section, i) => {
       const prevColor = i === 0 ? "#f15946" : sections[i - 1].dataset.bgColor;
 
+      const bgColor = section.dataset.bgColor;
+
+      const onEnter = () => {
+        gsap.to("body", {
+          backgroundColor: bgColor,
+          duration: 0.2,
+          overwrite: "auto",
+        });
+      };
+
+      const onLeaveBack = () => {
+        gsap.to("body", {
+          backgroundColor: prevColor,
+          duration: 0.2,
+          overwrite: "auto",
+        });
+      };
+
+      if (location.pathname === "/about" && i === 0) {
+        onEnter();
+      } else if (location.pathname === "/services" && i === 1) {
+        onEnter();
+      }
+
       gsap.to(section, {
         scrollTrigger: {
           trigger: section,
-          markers: false,
-          end: () => `+=${section.scrollHeight}`,
-          onEnter: () =>
-            gsap.to("body", {
-              backgroundColor: section.dataset.bgColor,
-              duration: 0.5,
-              overwrite: "auto",
-            }),
-          onLeaveBack: () =>
-            gsap.to("body", {
-              backgroundColor: prevColor,
-              duration: 0.5,
-              overwrite: "auto",
-            }),
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          markers: true,
+          snap: 1 / (sections.length - 1),
+          onEnter,
+          onLeaveBack,
         },
       });
     });
-  }, []);
+  }, [location]);
 
   return (
     <div className="body" data-init-bg-color="#55bf91">
@@ -72,13 +90,14 @@ const App = () => {
         className="o-section js-section"
         data-bg-color="#f15946"
       >
-        <Services />
+        <About />
       </section>
       <section
         ref={(el) => (sectionRefs.current[1] = el)}
         className="o-section js-section"
-        data-bg-color="#81a5ce"
+        data-bg-color="#004390"
       >
+        <Services />
       </section>
       <section
         ref={(el) => (sectionRefs.current[2] = el)}
