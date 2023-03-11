@@ -17,7 +17,7 @@
     text-align: center;
     width: 70%;
     /* margin: 0 auto; */
-    color: #242424;
+    color: #fff;
 }
 
 .features__container {
@@ -46,8 +46,7 @@
 }
 
 .features__title h1 {
-    color: #242424;
-    font-family: var(--font-family);
+    color: #fff;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: -.04em;
@@ -56,7 +55,7 @@
 
 .features__text {
     margin-top: 0.5rem;
-    color: #242424;
+    color: #fff;
     font-weight: 500;
 }
 
