@@ -11,10 +11,36 @@ export const About = () => {
 
   return (
     <section id="about">
-     <div className="about__container">
+     <div id="AB1" className="about__container">
       <h1 className="about__title">
         <span>Empowering businesses with innovative web solutions</span>
       </h1>
+     </div>
+     <div className="features__container">
+      <div className="features__desc-container">
+        <div className="features__title">
+          <h1>Designing</h1>
+        </div>
+        <div className="features__text">
+        <span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
+      <div className="features__desc-container">
+        <div className="features__title">
+          <h1>Development</h1>
+        </div>
+        <div className="features__text">
+        <span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
+      <div className="features__desc-container">
+        <div className="features__title">
+          <h1>Branding</h1>
+        </div>
+        <div className="features__text">
+          <span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
      </div>
     </section>
   );
