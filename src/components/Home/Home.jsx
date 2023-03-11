@@ -32,11 +32,9 @@ function Home() {
         </li>
       </ul>
     </nav>
-      <div onMouseMove={handleMouseMove} className="home__container">
-      <h1 
-       style={{ transform: `translate(${mousePos.x / 80}px, ${mousePos.y / 80}px)` }}
-      className="home__title">
-        <span >From Concept To Reality</span>
+      <div className="home__container">
+      <h1 className="home__title">
+        <span >from concept to reality</span>
       </h1>
      </div>
     </section>

@@ -124,7 +124,7 @@ nav {
 
 /* ANIMATIONS */
 
-.nav__1 {
+/* .nav__1 {
   animation: animate 500ms ease-out;
 }
 .nav__2 {
@@ -154,4 +154,4 @@ nav {
   100% {
     transform: translateX(0);
   }
-}
+} */

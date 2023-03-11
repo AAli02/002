@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+
 .home__container {
   margin: 0 auto;
   width: 100%;
@@ -10,10 +13,27 @@
 }
 
 .home__title {
+  font-family: 'Sono', sans-serif;
   font-size: 6rem;
   color: #fff;
   max-width: 100%; 
   margin-bottom: 350px;
+  width: 18ch;
+  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
 }
 
 @media screen and (max-width: 860px) {
