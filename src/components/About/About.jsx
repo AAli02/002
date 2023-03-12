@@ -19,7 +19,7 @@ export const About = () => {
      <div className="features__container">
       <div data-aos="fade-left" data-aos-easing="ease-in" data-aos-durration="700ms" className="features__desc-container">
         <div className="features__title">
-          <h1>Designing</h1>
+          <h1>Design</h1>
         </div>
         <div className="features__text">
         <span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span>
@@ -27,7 +27,7 @@ export const About = () => {
       </div>
       <div data-aos="fade-left" data-aos-easing="ease-in" data-aos-durration="900ms" className="features__desc-container">
         <div className="features__title">
-          <h1>Development</h1>
+          <h1>Develop</h1>
         </div>
         <div className="features__text">
         <span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span>
@@ -35,7 +35,7 @@ export const About = () => {
       </div>
       <div data-aos="fade-left" data-aos-easing="ease-in" data-aos-durration="1100ms" className="features__desc-container">
         <div className="features__title">
-          <h1>Branding</h1>
+          <h1>Brand</h1>
         </div>
         <div className="features__text">
           <span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span>

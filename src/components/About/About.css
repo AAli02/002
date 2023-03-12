@@ -13,7 +13,7 @@
 }
 
 .about__title {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     width: 70%;
     margin: 0 auto;
@@ -33,15 +33,15 @@
 .features__desc-container {
     display: flex;
     place-items: center;
-    flex: 1 1;
+    justify-content: center;
     flex-direction: column;
+    flex: 1 1;
     margin: 1rem;
     min-width: 210px;
 }
 
 .features__title {
     flex: 1 1;
-    margin-right: 2rem;
     max-width: 180px;
 }
 
