@@ -21,10 +21,6 @@ function Landing() {
           {/* <img className="banner__img" src={rocky} alt="" /> */}
         </div>
       </div>
-
-      {/* <a href="#" className="scroll">
-        <div className="scroll__icon"></div>
-      </a> */}
     </section>
   );
 }
