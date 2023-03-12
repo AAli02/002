@@ -3,7 +3,7 @@
 }
 
 .about__container {
-    /* margin: 0 auto; */
+    margin: 0 auto;
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -16,7 +16,7 @@
     font-size: 2rem;
     text-align: center;
     width: 70%;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     color: #242424;
 }
 
@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 460px) {
     .about__title {
-        text-align: start;
+        text-align: center;
         width: 70%;
         font-size: 1rem;
     }
