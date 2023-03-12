@@ -67,4 +67,7 @@ body {
   * {
     overflow-x: hidden;
   }
+  .scroll {
+    bottom: 20px;
+  }
 }

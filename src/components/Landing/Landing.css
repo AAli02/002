@@ -85,7 +85,7 @@ h2 {
   font-weight: bold;
 }
 
-.scroll__icon {
+/* .scroll__icon {
   width: 20px;
   height: 30px;
   border: 2px solid #242424;
@@ -118,7 +118,7 @@ h2 {
   100% {
     transform: translateY(-3px);
   }  
-}
+} */
 
 /* FORM */
 /* FORM */
@@ -191,7 +191,7 @@ textarea {
     padding: 0px 0px;
   }
 
-  .scroll__icon {
+  /* .scroll__icon {
     border: 2px solid #fff;
   }
 
@@ -201,7 +201,7 @@ textarea {
 
   .scroll__icon:after {
     background-color: #fff;
-  }
+  } */
 
 }
 
@@ -256,17 +256,17 @@ textarea {
     font-size: 18px;
   }
 
-  .scroll__icon {
+  /* .scroll__icon {
     border: 2px solid #fff;
   }
   
   .scroll {
-    bottom: 100px;
+    bottom: 20px;
   }
   
   .scroll__icon:after {
     background-color: #fff;
-  }
+  } */
 
   input,
   textarea {
