@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <section id="about">
      <div id="AB1" className="about__container">
-      <h1 className="about__title">
+      <h1 data-aos="fade-in" data-aos-easing="ease-in" className="about__title">
         <span>Empowering businesses with innovative web solutions</span>
       </h1>
      </div>
