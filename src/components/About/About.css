@@ -54,6 +54,7 @@
 }
 
 .features__text {
+    text-align: center;
     margin-top: 0.5rem;
     color: #242424;
     font-weight: 500;
